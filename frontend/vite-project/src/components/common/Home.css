@@ -1,0 +1,67 @@
+/* Ensure the counter is behind the content */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Puts the counter behind the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: counterAnimation 1s ease-in-out infinite;
+}
+
+.counter-text {
+  font-size: 2rem;
+  color: #2a73cc;
+  margin: 10px 0;
+  animation: counterTextAnimation 5s linear infinite;
+}
+
+/* Animation for counter background effect */
+@keyframes counterAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Continuous counter text animation */
+@keyframes counterTextAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.first-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Background color for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-home {
+  max-width: 600px;
+  color: #333;
+}
+
+.z-index-1 {
+  z-index: 1; /* Makes sure the content is on top */
+}

@@ -1,0 +1,31 @@
+:root {
+  font-family: Lato, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #2a73cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a57a5;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
