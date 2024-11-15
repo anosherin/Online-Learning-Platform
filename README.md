@@ -78,25 +78,7 @@ POST /api/users/login: Login a user.
 Courses
 GET /api/courses: Get all courses.
 POST /api/courses/create: Create a new course (Admin only).
-Project Structure
-plaintext
-Copy code
-online-learning-platform/
-├── client/              # React frontend
-│   ├── public/          # Public assets
-│   ├── src/             # React components and logic
-│   │   ├── components/  # Reusable components
-│   │   ├── pages/       # Pages (e.g., Login, Dashboard)
-│   │   ├── App.js       # Main app file
-│   │   ├── index.js     # Entry point for React
-├── server/              # Express backend
-│   ├── config/          # Database connection
-│   ├── models/          # Mongoose schemas
-│   ├── routes/          # API routes
-│   ├── middleware/      # Authentication middleware
-│   ├── server.js        # Entry point for backend
-├── .gitignore           # Files to ignore in Git
-├── README.md            # Documentation
+
 Features Breakdown
 Frontend Features
 User-friendly React-based UI.
