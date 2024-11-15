@@ -36,7 +36,7 @@ const getAllCoursesController = async (req, res) => {
 const deleteCourseController = async (req, res) => {
   const { courseid } = req.params; // Use the correct parameter name
   try {
-    // Attempt to delete the course by its ID
+    // Attemptt to delete the course by its ID
     const course = await courseSchema.findByIdAndDelete({ _id: courseid });
 
     // Check if the course was found and deleted successfully
